@@ -44,7 +44,7 @@ Before running the API, ensure you have the following installed:
 * Django 4+
 * PostgreSQL
 * PostGIS extension for PostgreSQL
-* Redis (for Celery and WebSocket channels)
+* Redis (version 5 or above, for Celery and WebSocket channels)
 * Docker (optional, for containerized deployment)
 
 ---
