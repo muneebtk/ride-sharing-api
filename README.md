@@ -111,7 +111,7 @@ Before running the API, ensure you have the following installed:
 
 ## API Documentation
 
-The API is documented in Postman. Access the documentation [here](#) (replace with the Postman link).
+The API is documented in Postman. Access the documentation [here]([(https://documenter.getpostman.com/view/22016828/2sB2j7dpKA)]).
 
 ### Example Endpoints:
 
