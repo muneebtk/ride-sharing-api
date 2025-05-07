@@ -44,7 +44,7 @@ Before running the API, ensure you have the following installed:
 * Django 4+
 * PostgreSQL
 * PostGIS extension for PostgreSQL
-* Redis (for Celery and WebSocket channels)
+* Redis (version 5 or above, for Celery and WebSocket channels)
 * Docker (optional, for containerized deployment)
 
 ---
@@ -78,6 +78,9 @@ Before running the API, ensure you have the following installed:
    * Run migrations:
 
      ```bash
+     python manage.py makemigrations
+     ```
+     ```bash
      python manage.py migrate
      ```
 
@@ -108,7 +111,7 @@ Before running the API, ensure you have the following installed:
 
 ## API Documentation
 
-The API is documented in Postman. Access the documentation [here](#) (replace with the Postman link).
+The API is documented in Postman. Access the documentation [here](https://documenter.getpostman.com/view/22016828/2sB2j7dpKA).
 
 ### Example Endpoints:
 
