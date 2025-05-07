@@ -78,6 +78,9 @@ Before running the API, ensure you have the following installed:
    * Run migrations:
 
      ```bash
+     python manage.py makemigrations
+     ```
+     ```bash
      python manage.py migrate
      ```
 
