@@ -3,7 +3,7 @@ from django.contrib.gis.geos import Point
 from django.contrib.gis.db.models.functions import Distance
 from .models import User, Ride
 
-# Default bounds for random latitude and longitude (adjust as needed)
+# Default bounds for random latitude and longitude
 DEFAULT_LATITUDE_BOUNDS = (-90, 90)
 DEFAULT_LONGITUDE_BOUNDS = (-180, 180)
 

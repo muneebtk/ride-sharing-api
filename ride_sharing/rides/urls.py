@@ -1,6 +1,13 @@
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-from .views import RideLocationView, RideRequestView, RideStatusUpdateView, UserRegistrationView, signin_user, RideViewSet
+from .views import (
+    RideLocationView,
+    RideRequestView,
+    RideStatusUpdateView,
+    UserRegistrationView,
+    signin_user,
+    RideViewSet,
+)
 
 
 router = DefaultRouter()
@@ -20,6 +27,5 @@ urlpatterns = [
         name="ride-location",
     ),
     path("rides/request/", RideRequestView.as_view(), name="ride-request"),
-
     path("", include(router.urls)),
 ]

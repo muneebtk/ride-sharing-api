@@ -151,7 +151,6 @@ class RideRequestView(APIView):
         )
 
         nearest_drivers = get_nearby_drivers(pickup_location)
-
         # Format response
         formatted_drivers = []
         for driver in nearest_drivers:
@@ -174,7 +173,6 @@ class RideRequestView(APIView):
                     },
                 }
             )
-
         return Response(
             {
                 "ride_id": ride.id,

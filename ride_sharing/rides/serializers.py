@@ -51,26 +51,3 @@ class RideSerializer(serializers.ModelSerializer):
         fields = '__all__'
         read_only_fields = ['rider', 'driver', 'current_location', 'created_at', 'updated_at']
 
-# class RideStatusUpdateSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Ride
-#         fields = ['status']
-#         read_only_fields = ['rider', 'driver', 'pickup_location', 'dropoff_location', 'current_location', 'created_at', 'updated_at']
-
-#     def validate_status(self, value):
-#         current_status = self.instance.status  # Current status of the ride
-
-#         # Define allowed transitions
-#         allowed_transitions = {
-#             "requested": ["in_progress", "cancelled"],
-#             "in_progress": ["completed", "cancelled"],
-#             "completed": [],  # No transitions allowed from 'completed'
-#             "cancelled": [],  # No transitions allowed from 'cancelled'
-#         }
-
-#         # Check if the requested status is a valid transition
-#         if value not in allowed_transitions.get(current_status, []):
-#             raise serializers.ValidationError(
-#                 f"Cannot change status from '{current_status}' to '{value}'."
-#             )
-#         return value
